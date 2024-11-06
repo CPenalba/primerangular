@@ -7,8 +7,14 @@ import { DoCheck } from '@angular/core';
   templateUrl: './hooksangular.component.html',
 })
 export class HooksAngular implements OnInit {
+  public mensaje: string;
   constructor() {
-    console.log('Soy ecl constructor de Hooks Angular');
+    console.log('Soy el constructor de Hooks Angular');
+    this.mensaje = 'Soy Hooks en Angular';
+  }
+
+  cambiarMensaje(): void {
+    this.mensaje = 'Cambiando en un CLICK!!!';
   }
 
   ngOnInit(): void {
