@@ -5,10 +5,8 @@ import { Component } from '@angular/core';
   //debemos declarar el nombre del component en angular, se suelen llamar mediante guion
   selector: 'primer-component',
   //como no vamos a tener html (vista) como template vamos a escribir directamsnte el codigo html aqui
-  template: `
-    <h1>Soy el primer component de Angular!!!</h1>
-    <h2 style="color:blue">{{ titulo }}, {{ descripcion }}, {{ anyo }}</h2>
-  `,
+  templateUrl: './primer.component.html',
+  styleUrls: ['./primer.component.css'],
 })
 
 //todo componnet debe ser declarado como una clase

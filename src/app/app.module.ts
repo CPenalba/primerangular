@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimerComponent } from '../components/primercomponent/primer.component';
+import { HooksAngular } from '../components/hooksangular/kooksangular.component';
 
 @NgModule({
-  declarations: [AppComponent, PrimerComponent],
+  declarations: [AppComponent, PrimerComponent, HooksAngular],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
